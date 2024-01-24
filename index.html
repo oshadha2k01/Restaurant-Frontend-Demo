@@ -4,6 +4,7 @@
 <head>
     <title>Phoenix Bakery</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -15,10 +16,9 @@
             </div>
             <ul>
                 <li><a href="#" onclick="showBookPopup()">Book Now</a></li>
-                <li><a href="#"onclick="showOffersPopup()">Offers</a></li>
+                <li><a href="#" onclick="showOffersPopup()">Offers</a></li>
                 <li><a href="#" onclick="showAboutPopup()">About Us</a></li>
                 <li><a href="#" onclick="showContactPopup()">Contact Us</a></li>
-     
             </ul>
         </div>
         <div class="content-box">
@@ -30,15 +30,9 @@
         </div>
         <div class="buttons">
             <a href="#" class="button" onclick="showLoginBox()">Sign In</a>
-            <a href="#" class="button"onclick="showOrderNowPopup()">Order Now</a>
+            <a href="#" class="button" onclick="showOrderNowPopup()">Order Now</a>
         </div>         
     </div>
-    <div>
-        <center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xPPLbEFbCAo?si=MspuqV0ugcrAJ3K-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </center>
-    </div>
-
     <div class="popup" id="bookNowPopup">
         <div class="popup-content">
             <h2>Book Your Table</h2>
@@ -73,8 +67,6 @@
         </div>
     </div>
     
-    
-
     <div class="popup" id="aboutPopup">
         <div class="popup-content">
             <h2>About Phoenix Bakeries and Restaurant</h2>
@@ -109,7 +101,6 @@
             <button onclick="hideOrderNowPopup()">Close</button>
         </div>
     </div>
-    
 
     <div class="popup" id="contactPopup">
     <div class="popup-content">
@@ -119,57 +110,6 @@
         <button onclick="hideContactPopup()">Close</button>
     </div>
     </div>
-
-    <script>
-        function showLoginBox() {
-            document.getElementById("loginBox").style.display = "flex";
-        }
-
-        function hideLoginBox() {
-            document.getElementById("loginBox").style.display = "none";
-        }
-
-        function showOrderNowPopup() {
-            document.getElementById("orderNowPopup").style.display = "flex";
-        }
-
-        function hideOrderNowPopup() {
-            document.getElementById("orderNowPopup").style.display = "none";
-        }
-
-
-        function showBookPopup() {
-            document.getElementById("bookNowPopup").style.display = "flex";
-       }
-
-        function hideBookPopup() {
-            document.getElementById("bookNowPopup").style.display = "none";
-       } 
-       function showOffersPopup() {
-            document.getElementById("offersPopup").style.display = "flex";
-       }
-
-        function hideOffersPopup() {
-            document.getElementById("offersPopup").style.display = "none";
-       } 
-
-
-        function showAboutPopup() {
-            document.getElementById("aboutPopup").style.display = "flex";
-        }
-
-        function hideAboutPopup() {
-            document.getElementById("aboutPopup").style.display = "none";
-        }
-
-        function showContactPopup() {
-            document.getElementById("contactPopup").style.display = "flex";
-        }
-
-        function hideContactPopup() {
-            document.getElementById("contactPopup").style.display = "none";
-        }
-    </script>
 </body>
 
 </html>
